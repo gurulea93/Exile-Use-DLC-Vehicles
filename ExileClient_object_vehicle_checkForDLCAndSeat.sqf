@@ -19,6 +19,7 @@ _canGetIn = true;
 try
 {
 	if !(alive _vehicle) throw false;
+	if ((locked _vehicle) isEqualTo 2) throw false; 
 	if (isNil "_vehicleDLC") throw false;
 	if (_vehicleDLC in _ownedDLCs) throw false;
 	
