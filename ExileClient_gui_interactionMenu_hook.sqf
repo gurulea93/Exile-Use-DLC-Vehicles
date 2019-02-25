@@ -44,6 +44,7 @@ for "_i" from 0 to count(_menus) - 1 do
 		for "_n" from 0 to count(_menuItems) - 1 do 
 		{
 			_menuItem = _menuItems select _n;
+			_showmenuitem = [];
 			_showMenuItem = call compile (getText (_menuItem >> "condition"));			
 			_menuItemTitle = getText (_menuItem >> "title");
 			if (getText (_menuItem >> "title") find "ExileClient_object_vehicle_getInteractionName" > 0) then
